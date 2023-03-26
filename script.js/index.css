@@ -16,7 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background: #171717;
+    background: #40513B ;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -113,7 +113,7 @@ p {
 
 .sau {
     padding: 30px;
-    background: #1f1d1d
+    background: #609966
 }
 
 .box-container {
@@ -127,7 +127,7 @@ p {
 .box-container .box {
     height: 11rem;
     width: 17rem;
-    background: #101010;
+    background: #c5eb91;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
@@ -159,7 +159,7 @@ p {
 }
 
 .about {
-    background: #171717;
+    background: #9DC08B;
 }
 
 .price {
@@ -172,7 +172,7 @@ p {
 
 .contact {
     padding-top: 20px;
-    background: #171717;
+    background: #9DC08B;
     padding-bottom: 0;
 }
 
