@@ -87,6 +87,7 @@ p {
     color: #fff;
     text-decoration: none;
     background: #9c27b0;
+    border-radius: 20px;
 }
 
 .btn:hover {
