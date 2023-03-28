@@ -1,3 +1,8 @@
+/* NOTA: LOS AJUSTES EN CSS LOS HAGO EN UN MONITOR LG DE 14 PULGADAS CON UNA
+RESOLUCION DE 1200X1080 PIXEL , NO ES RESPONSIVE SI BAJAN LA RESOLUCION SE ROMPE
+LA PAGINA */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -128,17 +133,17 @@ p {
     background: #609966
 }
 
-.box-container {
+.box-container {  /* propiedad que me permite crear los 3 contenederos de DESTINOS  ver figma boceto */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     text-align: center;
 
 }
 
-.box-container .box {
+.box-container .box {  /* propiedad que me permite modelar las dimenciones de los 3 contenedores de DESTINOS  ver figma boceto */
     height: 11rem;
-    width: 17rem;
+    width: 15rem;
     background: #c5eb91;
     text-align: center;
     border-radius: 1rem;
@@ -146,7 +151,7 @@ p {
     margin: 2rem;   
 }
 
-.box-container .box i {
+.box-container .box i {  /* propiedad que me permite diseñar el logo de los tres contenedores de DESTINOS */
     height: 3rem;
     width: 3rem;
     line-height: 3rem;
@@ -159,19 +164,44 @@ p {
 
 }
 
-.box-container .box h3 {
+.box-container .box h3 {  /* prepiedad que me permite ajustar tamaño y color letra H3 de cada contenedor DESTINOS */
     font-size: 20px;
     color: #9c27b0;
 
 }
 
-.box-container .box p {
+.box-container .box p {  /* prepiedad que me permite ajustar tamaño y color del parrafo de cada contenedor DESTINOS */
     padding: 0 15px;
     font-size: 16px;
+    color: #9c27b0;
+
 }
 
-.about {
+.content-paquetes {  /* NO FUNCIONA */
+    padding: 30px;
     background: #9DC08B;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-paquetes {   /* NO FUNCIONA */ 
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-paquetes.box {
+    height: 11rem;
+    width: 15rem;
+    background: #c5eb91;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;
 }
 
 .price {
