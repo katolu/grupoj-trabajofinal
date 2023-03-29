@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background: #40513B ;
+    background:  -webkit-linear-gradient(left, #1f5da4, #00a0af);;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -203,6 +203,7 @@ p {
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
     margin: 2rem;
 }
+
 
 .price {
     background: url(img/4082373.jpg) no-repeat center;
