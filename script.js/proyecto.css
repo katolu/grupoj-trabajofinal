@@ -56,10 +56,10 @@ body {
 }
 
 .navbar a:hover {
-    background:  #cedee0;
+    background: #cedee0;
 }
 
-.header {
+.header {  /* corresponde al HEADER que agrupa dos DIV el primer DIV contiene el titulo GRUPO J */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,8 +109,8 @@ p {
     border-radius: 20px;
 }
 
-.btn:hover {
-    background:  #cedee0;
+.btn:hover {  /* el hover se aplica a todos los BTN "saber mas" */
+    background: #cedee0;
     
 }
 
@@ -123,8 +123,8 @@ p {
 }
 
 
-.content {
-    height: 50vh;
+.content { /* corresponde a la SECTION "conten-sau" DESTINOS */
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,27 +180,54 @@ p {
 
 }
 
-.content-paquetes {  /* NO FUNCIONA */
+.contenedor-padre1 {  /* es la SECTION */
     padding: 30px;
-    background: -webkit-linear-gradient(left, #00a0af , #1f5da4, #00a0af);
-    height: 50vh;
+    background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.box-paquetes {   /* NO FUNCIONA */ 
+.contenedor-hijo1 {   /* el DIV que va a contener a los otros cuartro DIV*/ 
     display: flex;
-    justify-content: flex-start;
+    justify-content:center;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.box-paquetes.box {
+.cajas1 {
     height: 11rem;
     width: 15rem;
-    background: ;
+    background: #cedee0;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;
+}
+
+.contenedor-padre2 {  /* es la SECTION */
+    padding: 30px;
+    background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-hijo2 {   /* el DIV que va a contener a los otros cuartro DIV*/ 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cajas2 {
+    height: 11rem;
+    width: 15rem;
+    background: #cedee0;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
@@ -239,4 +266,41 @@ p {
     }
    
     
+}
+
+.pie {
+    padding: 30px;
+    background: -webkit-linear-gradient(left , #1f5da4, #00a0af );
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-pie {
+    
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contacto {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.logo-pie {
+    margin-left: 30px;
+
 }
