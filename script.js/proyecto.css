@@ -56,7 +56,7 @@ body {
 }
 
 .navbar a:hover {
-    background: #609966;
+    background:  #cedee0;
 }
 
 .header {
@@ -110,7 +110,7 @@ p {
 }
 
 .btn:hover {
-    background: rgb(92, 109, 67);
+    background:  #cedee0;
     
 }
 
@@ -133,7 +133,7 @@ p {
 
 .sau {
     padding: 30px;
-    background: #609966
+    background: -webkit-linear-gradient(left, #1f5da4, #00a0af);
 }
 
 .box-container {  /* propiedad que me permite crear los 3 contenederos de DESTINOS  ver figma boceto */
@@ -147,7 +147,7 @@ p {
 .box-container .box {  /* propiedad que me permite modelar las dimenciones de los 3 contenedores de DESTINOS  ver figma boceto */
     height: 11rem;
     width: 15rem;
-    background: #c5eb91;
+    background: #cedee0;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
@@ -182,7 +182,7 @@ p {
 
 .content-paquetes {  /* NO FUNCIONA */
     padding: 30px;
-    background: #9DC08B;
+    background: -webkit-linear-gradient(left, #00a0af , #1f5da4, #00a0af);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -200,7 +200,7 @@ p {
 .box-paquetes.box {
     height: 11rem;
     width: 15rem;
-    background: #c5eb91;
+    background: ;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
@@ -218,7 +218,7 @@ p {
 
 .contact {
     padding-top: 20px;
-    background: #9DC08B;
+    background: -webkit-linear-gradient(left, #1f5da4, #00a0af);
     padding-bottom: 0;
 }
 
