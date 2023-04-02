@@ -18,7 +18,7 @@ body {
     font-family: sans-serif;
 }
 
-.head {
+.head { /* despues del BODY viene un DIV que dentro tiene un NAV */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,13 +66,13 @@ body {
 
 }
 
-.content.header {
+.content.header { /*  pertenece al HEADER dentro del cual hay dos DIV  */
     position: relative;
     height: 100vh;
     overflow: hidden;
   }
   
-  .content.header video {
+  .content.header video {   /*  video de las cataratas del iguazu */
     position: absolute;
     top: 0;
     left: 0;
@@ -207,7 +207,7 @@ p {
     margin: 2rem;
 }
 
-.contenedor-padre2 {  /* es la SECTION */
+.contenedor-padre2 {  /* es la SECTION y dentro hay un DIV hijo*/
     padding: 30px;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
     height: 90vh;
@@ -217,17 +217,17 @@ p {
     align-items: center;
 }
 
-.contenedor-hijo2 {   /* el DIV que va a contener a los otros cuartro DIV*/ 
+.contenedor-hijo2 {   /* el DIV hijo que va a contener a los otros seis DIV*/ 
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.cajas2 {
+.cajas2 {  /* seis DIV dentro del DIV hijo */
     height: 11rem;
     width: 15rem;
-    background: #cedee0;
+    background: #cedee0;    /*  PUEDEN PROBAR PONER FOTOS , TEXTOS, PRUEBEN QUE QUEDA MEJOR */
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
@@ -235,7 +235,7 @@ p {
 }
 
 
-.price {
+.price {  /*  esto es un SECTION dentro hay un ARTICLE un H2 y un parrafo y la imagen  */
     background: url(img/4082373.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
@@ -250,8 +250,8 @@ p {
 }
 
 
-@media (max-width: 768px) {
-
+@media (max-width: 768px) {  /*  ¡¡ CUIDAD CON EL MEDIA QUERY ¡¡  NI YO ESTOY SEGURO SI FUNCIONA, TENGO QUE LEER MAS SOBRE EL TEMA */
+                            /*  PUEDEN MANIPULAR Y PROBAR A GUSTO , NO ES EXIGENCIA QUE EL SITIO SEA RESPONSIVE */
     .title {
         margin-bottom: 0;
         font-size: 40px;
@@ -268,14 +268,14 @@ p {
     
 }
 
-.pie {
+.pie {  /* FOOTER dentro tiene dos DIV ( como en el boceto */
     padding: 30px;
     background: -webkit-linear-gradient(left , #1f5da4, #00a0af );
     height: 90vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;                /* TODO EL FOOTER ES SOLO UNA IDEA , MANIPULEN CON CONFIANZA */
+    justify-content: center;               /*  DE AQUI PARA ABAJO ES FOOTER MODIFIQUEN SIN MIEDO */
+    align-items: center;                   /*  YO VOY A PROBAR CON BOOTSTRAP A SI ME SALE */
 }
 .contacto {
     height: 45vh;
