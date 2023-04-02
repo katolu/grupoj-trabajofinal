@@ -14,9 +14,11 @@ html{
     scroll-behavior: smooth;
 }
 body {
+    background-color: #1f5da4;
     text-align: center;
     font-family: sans-serif;
 }
+
 
 .head { /* despues del BODY viene un DIV que dentro tiene un NAV */
     display: flex;
@@ -92,14 +94,14 @@ body {
 }
 
 p {
-    margin-bottom: 40px;
     font-size: 18px;
+    max-width: 70ch;
     color: #fff;
-    padding: 0 100px;
 }
 
 .btn {
     display: inline-block;
+    flex: 1 50%;
     margin-top: 15px;
     padding: 10px 40px;
     border: 2px solid #9c27b0;
@@ -116,6 +118,7 @@ p {
 
 .btn-home {
     display: flex;
+    margin: 1rem;
 }
 
 .btn-home a {
@@ -124,7 +127,6 @@ p {
 
 
 .content { /* corresponde a la SECTION "conten-sau" DESTINOS */
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,7 +185,6 @@ p {
 .contenedor-padre1 {  /* es la SECTION */
     padding: 30px;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,7 +211,6 @@ p {
 .contenedor-padre2 {  /* es la SECTION y dentro hay un DIV hijo*/
     padding: 30px;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,11 +235,15 @@ p {
 }
 
 
-.price {  /*  esto es un SECTION dentro hay un ARTICLE un H2 y un parrafo y la imagen  */
+.nosotros {  /*  esto es un SECTION dentro hay un ARTICLE un H2 y un parrafo y la imagen  */
     background: url(img/4082373.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+}
+.nosotros .contain{
+    min-height: 300px;
+    padding: 2rem;
 }
 
 
@@ -270,22 +274,34 @@ p {
 
 .pie {  /* FOOTER dentro tiene dos DIV ( como en el boceto */
     padding: 30px;
-    background: -webkit-linear-gradient(left , #1f5da4, #00a0af );
-    height: 90vh;
+    color: #fff;
+    background: #505050;
     display: flex;
-    flex-direction: column;                /* TODO EL FOOTER ES SOLO UNA IDEA , MANIPULEN CON CONFIANZA */
-    justify-content: center;               /*  DE AQUI PARA ABAJO ES FOOTER MODIFIQUEN SIN MIEDO */
-    align-items: center;                   /*  YO VOY A PROBAR CON BOOTSTRAP A SI ME SALE */
+    gap: 1rem;
+    flex-flow: row wrap;                /*  YO VOY A PROBAR CON BOOTSTRAP A SI ME SALE */
+}
+.pie p{
+    font-size: 12px;
+}
+.pie div {
+    flex: 1;
+}
+.pie div ul {
+    list-style: none;
+    text-align: initial;
+}
+.pie div ul li {
+    font-size: 12px;
+  margin-bottom: 1rem;  
 }
 .contacto {
-    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
-.logo-pie {
-    
+.logo-pie {    
     height: 45vh;
     display: flex;
     flex-direction: column;
