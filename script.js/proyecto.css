@@ -1,0 +1,306 @@
+/* NOTA: LOS AJUSTES EN CSS LOS HAGO EN UN MONITOR LG DE 14 PULGADAS CON UNA
+RESOLUCION DE 1200X1080 PIXEL , NO ES RESPONSIVE SI BAJAN LA RESOLUCION SE ROMPE
+LA PAGINA */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head { /* despues del BODY viene un DIV que dentro tiene un NAV */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:  -webkit-linear-gradient(left, #1f5da4, #00a0af);;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #cedee0;
+}
+
+.header {  /* corresponde al HEADER que agrupa dos DIV el primer DIV contiene el titulo GRUPO J */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content.header { /*  pertenece al HEADER dentro del cual hay dos DIV  */
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .content.header video {   /*  video de las cataratas del iguazu */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.btn:hover {  /* el hover se aplica a todos los BTN "saber mas" */
+    background: #cedee0;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content { /* corresponde a la SECTION "conten-sau" DESTINOS */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: -webkit-linear-gradient(left, #1f5da4, #00a0af);
+}
+
+.box-container {  /* propiedad que me permite crear los 3 contenederos de DESTINOS  ver figma boceto */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {  /* propiedad que me permite modelar las dimenciones de los 3 contenedores de DESTINOS  ver figma boceto */
+    height: 11rem;
+    width: 15rem;
+    background: #cedee0;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.box-container .box i {  /* propiedad que me permite diseñar el logo de los tres contenedores de DESTINOS */
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {  /* prepiedad que me permite ajustar tamaño y color letra H3 de cada contenedor DESTINOS */
+    font-size: 20px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p {  /* prepiedad que me permite ajustar tamaño y color del parrafo de cada contenedor DESTINOS */
+    padding: 0 15px;
+    font-size: 16px;
+    color: #9c27b0;
+
+}
+
+.contenedor-padre1 {  /* es la SECTION */
+    padding: 30px;
+    background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-hijo1 {   /* el DIV que va a contener a los otros cuartro DIV*/ 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cajas1 {
+    height: 11rem;
+    width: 15rem;
+    background: #cedee0;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;
+}
+
+.contenedor-padre2 {  /* es la SECTION y dentro hay un DIV hijo*/
+    padding: 30px;
+    background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-hijo2 {   /* el DIV hijo que va a contener a los otros seis DIV*/ 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cajas2 {  /* seis DIV dentro del DIV hijo */
+    height: 11rem;
+    width: 15rem;
+    background: #cedee0;    /*  PUEDEN PROBAR PONER FOTOS , TEXTOS, PRUEBEN QUE QUEDA MEJOR */
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;
+}
+
+
+.price {  /*  esto es un SECTION dentro hay un ARTICLE un H2 y un parrafo y la imagen  */
+    background: url(img/4082373.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.contact {
+    padding-top: 20px;
+    background: -webkit-linear-gradient(left, #1f5da4, #00a0af);
+    padding-bottom: 0;
+}
+
+
+@media (max-width: 768px) {  /*  ¡¡ CUIDAD CON EL MEDIA QUERY ¡¡  NI YO ESTOY SEGURO SI FUNCIONA, TENGO QUE LEER MAS SOBRE EL TEMA */
+                            /*  PUEDEN MANIPULAR Y PROBAR A GUSTO , NO ES EXIGENCIA QUE EL SITIO SEA RESPONSIVE */
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}
+
+.pie {  /* FOOTER dentro tiene dos DIV ( como en el boceto */
+    padding: 30px;
+    background: -webkit-linear-gradient(left , #1f5da4, #00a0af );
+    height: 90vh;
+    display: flex;
+    flex-direction: column;                /* TODO EL FOOTER ES SOLO UNA IDEA , MANIPULEN CON CONFIANZA */
+    justify-content: center;               /*  DE AQUI PARA ABAJO ES FOOTER MODIFIQUEN SIN MIEDO */
+    align-items: center;                   /*  YO VOY A PROBAR CON BOOTSTRAP A SI ME SALE */
+}
+.contacto {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-pie {
+    
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contacto {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.logo-pie {
+    margin-left: 30px;
+
+}
