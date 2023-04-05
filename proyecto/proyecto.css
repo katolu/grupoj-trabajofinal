@@ -245,6 +245,14 @@ a:any-link{
     margin: 2rem;
 }
 
+.imagen-cajas2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
 
 .nosotros {  /*  esto es un SECTION dentro hay un ARTICLE un H2 y un parrafo y la imagen  */
     background: url(img/4082373.jpg) no-repeat center;
