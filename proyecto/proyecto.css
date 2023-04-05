@@ -164,26 +164,19 @@ a:any-link{
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
-    margin: 2rem;   
+    margin: 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.box-container .box i {  /* propiedad que me permite diseñar el logo de los tres contenedores de DESTINOS */
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    background: #9c27b0;
-    font-size: 2rem;
-    margin: 1rem 0;
 
-}
+ 
 
 .box-container .box h3 {  /* prepiedad que me permite ajustar tamaño y color letra H3 de cada contenedor DESTINOS */
     font-size: 20px;
     color: #9c27b0;
-
+    margin: 40px 0 40px 0;
 }
 
 .box-container .box p {  /* prepiedad que me permite ajustar tamaño y color del parrafo de cada contenedor DESTINOS */
@@ -212,7 +205,7 @@ a:any-link{
 .cajas1 {
     height: 11rem;
     width: 15rem;
-    background: #cedee0;
+    background: #3f7981;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
