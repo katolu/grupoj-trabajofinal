@@ -160,32 +160,47 @@ a:any-link{
 .box-container .box {  /* propiedad que me permite modelar las dimenciones de los 3 contenedores de DESTINOS  ver figma boceto */
     height: 11rem;
     width: 15rem;
-    background: #cedee0;
+    background: #23747e;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
-    margin: 2rem; 
+    margin: 2rem;  
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+.imagen-box {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: block;
+    margin: 0 auto;
 }
 
 
- 
-
 .box-container .box h3 {  /* prepiedad que me permite ajustar tamaño y color letra H3 de cada contenedor DESTINOS */
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 20%; /* para posicionar el encabezado en el centro de la imagen verticalmente */
+    left: 50%; /* para posicionar el encabezado en el centro de la imagen horizontalmente */
+    transform: translate(-50%, -50%); /* para centrar el encabezado exactamente en el centro de la imagen */
     font-size: 20px;
-    color: #9c27b0;
-    margin: 40px 0 40px 0;
 }
 
 .box-container .box p {  /* prepiedad que me permite ajustar tamaño y color del parrafo de cada contenedor DESTINOS */
-    padding: 0 15px;
-    font-size: 16px;
-    color: #9c27b0;
-
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 0; /* para posicionar el párrafo en la parte inferior de la imagen */
+    left: 50%; /* para posicionar el párrafo en el centro de la imagen horizontalmente */
+    transform: translateX(-50%); /* para centrar el párrafo exactamente en el centro de la imagen horizontalmente */
+    font-size: 20px;
+    top: 60%;
 }
-
+/* contenedor PAQUETES */
 .contenedor-padre1 {  /* es la SECTION */
     padding: 30px;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
@@ -205,13 +220,44 @@ a:any-link{
 .cajas1 {
     height: 11rem;
     width: 15rem;
-    background: #3f7981;
+    background: #2c5d64;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
     margin: 2rem;
+    position: relative;/* para establecer la posición de los elementos internos */
+
+}
+.cajas1 h3 {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 20%; /* para posicionar el encabezado en el centro de la imagen verticalmente */
+    left: 50%; /* para posicionar el encabezado en el centro de la imagen horizontalmente */
+    transform: translate(-50%, -50%); /* para centrar el encabezado exactamente en el centro de la imagen */
+    font-size: 30px;
 }
 
+.cajas1 p {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 0; /* para posicionar el párrafo en la parte inferior de la imagen */
+    left: 50%; /* para posicionar el párrafo en el centro de la imagen horizontalmente */
+    transform: translateX(-50%); /* para centrar el párrafo exactamente en el centro de la imagen horizontalmente */
+    font-size: 20px;
+    top: 40%;
+    margin: 40px 0;
+}
+.imagen-cajas1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* contenedor GALERIA */
 .contenedor-padre2 {  /* es la SECTION y dentro hay un DIV hijo*/
     padding: 30px;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
