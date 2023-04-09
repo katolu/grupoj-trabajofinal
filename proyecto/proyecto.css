@@ -26,7 +26,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background:  -webkit-linear-gradient(left, #1f5da4, #00a0af);
+    background:  -webkit-linear-gradient(left,#00a0af, #1f5da4);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -38,9 +38,17 @@ body {
     list-style: none;
 }
 
-.logo {
-    margin-left: 30px;
-}
+.logo { 
+    margin-left: 10px;
+    width: 150px;
+}     
+
+
+.logo img {
+    
+   height: 60px;
+   width:200px;
+ }
 
 .logo a {
     text-decoration: none;
