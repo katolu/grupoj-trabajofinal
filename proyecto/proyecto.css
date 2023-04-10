@@ -170,7 +170,7 @@ a:any-link{
 }
 
 .sau {
-    padding: 3rem 0 6rem;
+    padding: 6rem 0;
     background: -webkit-linear-gradient(left, #1f5da4, #00a0af);
 }
 
@@ -227,7 +227,7 @@ a:any-link{
 }
 /* contenedor PAQUETES */
 .contenedor-padre1 {  /* es la SECTION */
-    padding: 3rem 0 6rem;
+    padding: 6rem 0;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
     display: flex;
     flex-flow: row wrap;
@@ -286,7 +286,7 @@ a:any-link{
 
 /* contenedor GALERIA */
 .contenedor-padre2 {  /* es la SECTION y dentro hay un DIV hijo*/
-    padding: 3rem 0 6rem;
+    padding: 6rem 0;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
     display: flex;
     flex-direction: column;
@@ -327,7 +327,7 @@ a:any-link{
     text-align: center;
 }
 .nosotros .contain{
-    padding: 3rem 0 6rem;
+    padding: 6rem 0;
 }
 
 
@@ -396,7 +396,7 @@ a:any-link{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 6rem 2rem;
 }
 .contacto > div{
     max-width: clamp(38rem, 1vw , 320px);
