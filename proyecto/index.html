@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="proyecto.css">
+    <script src="https://kit.fontawesome.com/0843a630dd.js" crossorigin="anonymous"></script>
     <title>SCRIPT</title>
 
 </head>
 <body>
 
-    <div class="head">
+    <div class="head" id="logo">
 
         <div class="logo">
-            <img src="img/Logo 1200X400.png" alt="grupo j">
+            <a href="#inicio"><img src="/proyecto/img/GRUPO J_Logo color ok-600x200.png" alt="grupo j" height="90px"></a>
+            
+            
        </div>
 
         <nav class="navbar">
             <ul>
-                <li>
-                    <a href="#inicio">Inicio</a>
-                </li>
+                
                 <li>
                     <a href="#destino">Destino</a>
                 </li>
@@ -29,10 +30,19 @@
                     <a href="#paquetes">Paquetes</a>
                 </li>
                 <li>
+                    <a href="#nosotros">NOSOTROS</a>
+                </li>
+                <li>
                     <a href="#galeria">Galerìa</a>
                 </li>
                 <li>
                     <a href="#contacto">Contacto</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
                 </li>
             </ul>
         </nav>
@@ -41,29 +51,12 @@
 
     <header class="content header" id="inicio">
         <video autoplay loop muted>
-            <source src="img/pexels-fabio-poletto-5408397.mp4" type="video/mp4">
+            <source src="img/video1.mp4" type="video/mp4">
           </video>
           <div class="header-content"> 
-        <h2 class="title">Grupo J</h2>
-        <p>
-            GRUPO J es reconocido como un líder de calidad en el mercado de lujo sudamericano que brinda servicios “de empresa a empresa” a clientes muy exigentes. La estrategia competitiva de GRUPO J es clara: ser capaz de suministrar un servicio completo.
-
-            Con la fluidez en la logística y la agilidad en las decisiones, trabajaremos en equipo para que el viaje de vacaciones, o corporativo tenga un gran potencial.
-            
-            Con gusto atenderemos personalmente todas las necesidades que tengan tanto en el T & T, viajes de lujo, experiencias a medida, grupos o incentivos.  
-            
-           <br> <strong>Claudio Barraza-Flavia Levy-Lidia Daems-Victor Ortiz-Nicolas Segui-Karina Sisti</strong> 
-            
-            Recibiéndolos desde 1990
-            
-            
-        </p>
+        
         </div>
 
-        <div class="btn-home">
-            <a href="https://www.argentina.gob.ar/turismoydeportes" class="btn">Saber mas</a>
-            <a href="https://previaje.gob.ar/como-funciona" class="btn">Saber mas</a>
-        </div>
     </header>
 
     <section class="content sau" id="destino">
@@ -115,7 +108,7 @@
                  <p>6 CUOTAS DE $30.279 </p>
             </div>
             <div class="cajas1">
-                <img src="img/jujuy.jpeg" alt="jujuy" class="imagen-cajas1">
+                <img src="img/jujuy.jpg" alt="jujuy" class="imagen-cajas1">
                 <h3>Jujuy</h3>
                  <p>6 CUOTAS DE $50.279</p>
             </div>
@@ -139,18 +132,29 @@
 
     </section>
 
-    <section class="content nosotros">
+    <section class="content nosotros" id="nosotros">
 
         <article class="contain">
             <h2 class="title">nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Ut soluta similique 
-                quia reprehenderit eligendi aliquam. Sit 
-                odio impedit quibusdam. Velit corporis, 
-                optio debitis quidem ex ipsam rerum dolorem autem sequi.
-            </p>
+            <h5>GRUPO J es reconocido como un líder de calidad en el mercado de lujo sudamericano que brinda servicios “de empresa a empresa” a clientes muy exigentes. La estrategia competitiva de GRUPO J es clara: ser capaz de suministrar un servicio completo.
 
-            <a href="#" class="btn">Saber precio</a>
+                Con la fluidez en la logística y la agilidad en las decisiones, trabajaremos en equipo para que el viaje de vacaciones, o corporativo tenga un gran potencial.
+                
+                Con gusto atenderemos personalmente todas las necesidades que tengan tanto en el T & T, viajes de lujo, experiencias a medida, grupos o incentivos.  
+                
+               <br><br> <strong>Claudio Barraza-Flavia Levy-Lidia Daems-Victor Ortiz-Nicolas Segui-Karina Sisti</strong> 
+                
+                Recibiéndolos desde 1990
+            </h5>
+
+            <!-- ----------------------------BOTONES
+
+            <div class="btn-home">
+                <a href="https://www.argentina.gob.ar/turismoydeportes" class="btn">Saber mas</a>
+                <a href="https://previaje.gob.ar/como-funciona" class="btn">Saber mas</a>
+            </div>
+            -->
+    
 
         </article>
 
@@ -169,7 +173,7 @@
                 <img src="img/glaciar.jpg" alt="glaciar" class="imagen-cajas2">
             </div>
             <div class="cajas2">
-                 <img src="img/BS AS.jpg" alt="Buenos Aires" class="imagen-cajas2">
+                 <img src="img/BS AS dia.jpg" alt="Buenos Aires" class="imagen-cajas2">
             </div>
             <div class="cajas2">
                  <img src="img/SAN JUAN.jpg" alt="San Juan" class="imagen-cajas2">
@@ -178,7 +182,7 @@
                  <img src="img/OIP.jpg" alt="Entre Rios" class="imagen-cajas2">
             </div>
             <div class="cajas2">
-                 <img src="img/jujuy.jpg" alt="Jujuy" class="imagen-cajas2">
+                 <img src="img/jujuy-galeria.jpg" alt="Jujuy" class="imagen-cajas2">
             </div>
             </div>
         <a href="#" class="btn">Saber mas</a>
@@ -191,7 +195,7 @@
                 <h4 class="title">
                     CONTACTO
                 </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, cum.</p>
+                <p>Si tiene alguna duda de cualquier tipo, quiere recibir más información de algún paquete o servicio que ofrecemos, necesit conocer nuestras tarifas o simplemente decea comunicarse con nosotros, no dude en contactarnos a travez del siguiente formulario que a la brevedad uno de nuestros representante se comunicará con usted pararesolver todas las dudas. Gracias por contactarse con Grupo J.</p>
                 <form action="">
                     <fieldset>
                         <label for="nombre">
@@ -217,7 +221,7 @@
     </div>
     <footer class="pie">
         <div class="logo">
-            <img src="img/Logo 1200X400.png" alt="logo">
+            <img src="img/GRUPO J_Logo color bl-ve-600x200.png" alt="logo" height="50px">
         </div>
             <ul>
                 <li><a href="#destino">DESTINOS</a></li>
