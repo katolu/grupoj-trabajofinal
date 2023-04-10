@@ -24,26 +24,33 @@ body {
 .head { /* despues del BODY viene un DIV que dentro tiene un NAV */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0 1rem;
     height: 100px;
     background:  -webkit-linear-gradient(left, white, #cedee0);
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 100;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+.navbar{
+    padding: 0 1rem;
+}
 .navbar ul {
     display: flex;
-    margin-right: 100px;
+    flex-flow: row nowrap;
     list-style: none;
 }
 
-.logo { 
-    margin-left: 10%;
-    width: 150px;
-}     
-
-
+.logo img{ 
+    min-width: 80px;
+    height: auto;
+}
 
 .logo a {
     text-decoration: none;
@@ -330,7 +337,7 @@ a:any-link{
 }
 
 
-@media (max-width: 768px) {  /*  ¡¡ CUIDAD CON EL MEDIA QUERY ¡¡  NI YO ESTOY SEGURO SI FUNCIONA, TENGO QUE LEER MAS SOBRE EL TEMA */
+@media (max-width: 67em) {  /*  ¡¡ CUIDAD CON EL MEDIA QUERY ¡¡  NI YO ESTOY SEGURO SI FUNCIONA, TENGO QUE LEER MAS SOBRE EL TEMA */
                             /*  PUEDEN MANIPULAR Y PROBAR A GUSTO , NO ES EXIGENCIA QUE EL SITIO SEA RESPONSIVE */
     .title {
         margin-bottom: 0;
@@ -344,7 +351,9 @@ a:any-link{
     .navbar {
         display: none;
     }
-   
+   .logo{
+    max-width: 150px;
+   }
     
 }
 
