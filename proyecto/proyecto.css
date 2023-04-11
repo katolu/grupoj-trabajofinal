@@ -49,6 +49,7 @@ img{
 
 .logo img{ 
     min-width: 80px;
+    max-width: 240px;
     height: auto;
 }
 
