@@ -1,6 +1,4 @@
-/* NOTA: LOS AJUSTES EN CSS LOS HAGO EN UN MONITOR LG DE 14 PULGADAS CON UNA
-RESOLUCION DE 1200X1080 PIXEL , NO ES RESPONSIVE SI BAJAN LA RESOLUCION SE ROMPE
-LA PAGINA */
+ 
 
 
 *{
@@ -27,7 +25,7 @@ header,
 main{
     flex: 1 100%;
 }
-.head { /* despues del BODY viene un DIV que dentro tiene un NAV */
+.head {  
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -82,20 +80,20 @@ img{
     background:  #70d9e2;
 }
 
-.header {  /* corresponde al HEADER que agrupa dos DIV el primer DIV contiene el titulo GRUPO J */
+.header {  
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.content.header { /*  pertenece al HEADER dentro del cual hay dos DIV  */
+.content.header {  
     position: relative;
     height: 100vh;
     overflow: hidden;
   }
   
-  .content.header video {   /*  video de las cataratas del iguazu */
+  .content.header video {   
     position: absolute;
     top: 0;
     left: 0;
@@ -134,7 +132,7 @@ h5 {
     text-shadow: 1px 1px 5px black;
 }
 
-/*              TITULO NAVEGADOR            */
+
 a:any-link{
     color: #1f5da4;
 }
@@ -146,7 +144,7 @@ a:any-link{
     padding: 10px 40px;
     border: 2px solid 00a0af;
     background-color: #cedee0;
-    /*background-color: rgba(255, 255, 255, .25);*/
+     
     color: #1f5da4;
     font-weight: bold;
     font-size: 20px;
@@ -154,7 +152,7 @@ a:any-link{
     border-radius: 20px;
 }
 
-.btn:hover {  /* el hover se aplica a todos los BTN "saber mas" */
+.btn:hover {   
     background: #70d9e2;
     
 }
@@ -169,7 +167,7 @@ a:any-link{
 }
 
 
-.content { /* corresponde a la SECTION "conten-sau" DESTINOS */
+.content {  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +179,7 @@ a:any-link{
     background: -webkit-linear-gradient(left, #1f5da4, #00a0af);
 }
 
-.box-container {  /* propiedad que me permite crear los 3 contenederos de DESTINOS  ver figma boceto */
+.box-container {   
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -189,7 +187,7 @@ a:any-link{
 
 }
 
-.box-container .box {  /* propiedad que me permite modelar las dimenciones de los 3 contenedores de DESTINOS  ver figma boceto */
+.box-container .box {   
     height: 11rem;
     width: 15rem;
     background: #23747e;
@@ -212,28 +210,28 @@ a:any-link{
 }
 
 
-.box-container .box h3 {  /* prepiedad que me permite ajustar tamaño y color letra H3 de cada contenedor DESTINOS */
+.box-container .box h3 {   
     position: absolute;
     color: white;
     z-index: 1;
-    top: 20%; /* para posicionar el encabezado en el centro de la imagen verticalmente */
-    left: 50%; /* para posicionar el encabezado en el centro de la imagen horizontalmente */
-    transform: translate(-50%, -50%); /* para centrar el encabezado exactamente en el centro de la imagen */
+    top: 20%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
     font-size: 20px;
 }
 
-.box-container .box p {  /* prepiedad que me permite ajustar tamaño y color del parrafo de cada contenedor DESTINOS */
+.box-container .box p {   
     position: absolute;
     color: white;
     z-index: 1;
-    bottom: 0; /* para posicionar el párrafo en la parte inferior de la imagen */
-    left: 50%; /* para posicionar el párrafo en el centro de la imagen horizontalmente */
-    transform: translateX(-50%); /* para centrar el párrafo exactamente en el centro de la imagen horizontalmente */
+    bottom: 0;  
+    left: 50%;  
+    transform: translateX(-50%);  
     font-size: 20px;
     top: 60%;
 }
-/* contenedor PAQUETES */
-.contenedor-padre1 {  /* es la SECTION */
+ 
+.contenedor-padre1 {   
     padding: 6rem 0;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
     display: flex;
@@ -242,7 +240,7 @@ a:any-link{
     align-items: center;
 }
 
-.contenedor-hijo1 {   /* el DIV que va a contener a los otros cuartro DIV*/ 
+.contenedor-hijo1 {    
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -258,16 +256,16 @@ a:any-link{
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
     margin: 2rem;
-    position: relative;/* para establecer la posición de los elementos internos */
+    position: relative; 
 
 }
 .cajas1 h3 {
     position: absolute;
     color: white;
     z-index: 1;
-    top: 30%; /* para posicionar el encabezado en el centro de la imagen verticalmente */
-    left: 50%; /* para posicionar el encabezado en el centro de la imagen horizontalmente */
-    transform: translate(-50%, -50%); /* para centrar el encabezado exactamente en el centro de la imagen */
+    top: 30%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
     font-size: 40px;
     text-shadow: 1px 1px 5px #242b2c;
 }
@@ -276,9 +274,9 @@ a:any-link{
     position: absolute;
     color: white;
     z-index: 1;
-    bottom: 0; /* para posicionar el párrafo en la parte inferior de la imagen */
-    left: 50%; /* para posicionar el párrafo en el centro de la imagen horizontalmente */
-    transform: translateX(-50%); /* para centrar el párrafo exactamente en el centro de la imagen horizontalmente */
+    bottom: 0;  
+    left: 50%;  
+    transform: translateX(-50%);  
     font-size: 20px;
     top: 50%;
     margin: 40px 0;
@@ -291,8 +289,8 @@ a:any-link{
     margin: 0 auto;
 }
 
-/* contenedor GALERIA */
-.contenedor-padre2 {  /* es la SECTION y dentro hay un DIV hijo*/
+ 
+.contenedor-padre2 {   
     padding: 6rem 0;
     background: -webkit-linear-gradient(left, #00a0af , #1f5da4);
     display: flex;
@@ -301,17 +299,17 @@ a:any-link{
     align-items: center;
 }
 
-.contenedor-hijo2 {   /* el DIV hijo que va a contener a los otros seis DIV*/ 
+.contenedor-hijo2 {    
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.cajas2 {  /* seis DIV dentro del DIV hijo */
+.cajas2 {   
     height: 11rem;
     width: 15rem;
-    background: #cedee0;    /*  PUEDEN PROBAR PONER FOTOS , TEXTOS, PRUEBEN QUE QUEDA MEJOR */
+    background: #cedee0;     
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
@@ -327,7 +325,7 @@ a:any-link{
 }
 
 
-.nosotros {  /*  esto es un SECTION dentro hay un ARTICLE un H2 y un parrafo y la imagen  */
+.nosotros {   
     background: url(img/4082373.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
@@ -344,8 +342,7 @@ a:any-link{
 }
 
 
-@media (max-width: 67em) {  /*  ¡¡ CUIDAD CON EL MEDIA QUERY ¡¡  NI YO ESTOY SEGURO SI FUNCIONA, TENGO QUE LEER MAS SOBRE EL TEMA */
-                            /*  PUEDEN MANIPULAR Y PROBAR A GUSTO , NO ES EXIGENCIA QUE EL SITIO SEA RESPONSIVE */
+@media (max-width: 67em) {   
     .title {
         margin-bottom: 0;
         font-size: 40px;
@@ -364,14 +361,14 @@ a:any-link{
     
 }
 
-.pie {  /* FOOTER dentro tiene dos DIV ( como en el boceto */
+.pie {   
     padding: 30px;
     color: #fff;
     background: #242b2c;
     display: flex;
     flex: 1 100%;
     gap: 20rem;
-    flex-flow: row wrap;                /*  YO VOY A PROBAR CON BOOTSTRAP A SI ME SALE */
+    flex-flow: row wrap;                
 }
 .pie p{
     font-size: 12px;  
@@ -398,7 +395,7 @@ a:any-link{
   margin-bottom: 1rem;  
 }
 
-/* Formulario */
+ 
 .contacto {
     display: flex;
     flex-flow: row wrap;
@@ -452,7 +449,7 @@ a:any-link{
     
 }
 .contacto {
-    /*margin-bottom: 0px;*/
+    
     color: #fff;
 }
 .logo-pie {
